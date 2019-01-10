@@ -21,7 +21,7 @@ case "$1" in
 			cat "$CARD"
 			read -p "Got it? [Y/n] " -n 1 ANS
 			echo
-			if [ "$ANS" != "n" ] && [ "$ANS" != "N" ]; then
+			if [ "$ANS" == "y" ]; then
 				mv "$CARD" ".$CARD"
 			fi
 		done;
